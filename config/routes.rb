@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'profiles/new'
+
   get 'residents/new'
 
   get 'static_pages/about'
@@ -69,6 +71,8 @@ Rails.application.routes.draw do
   #   end
   
   # Rails.application.routes.draw do
+  get 'profiles/new'
+
   get 'residents/new'
 
   #get 'static_pages/about'

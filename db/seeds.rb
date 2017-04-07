@@ -21,15 +21,15 @@ require 'csv'
 #     Residents.create(data[0], data[1], data[2], data[3])
 # end
 
-#p Residents.column_names
+# p Residents.column_names
 
-#csv_data = File.read('Workbook1.csv')
-#csv = CSV.parse(csv_data, :headers => true)
-#csv.each do |row|
-#  Residents.create!(row.to_hash)
-#end
+ csv_data = File.read('Workbook1.csv')
+ csv = CSV.parse(csv_data, :headers => true)
+ csv.each do |row|
+     row = row.to_hash.with_indifferent_access
+     bob = row.to_hash.symbolize_keys
+     p bob
+     Profile.create!(bob)
+ end
 
-Resident.create!({:first_name => 'Sam', :last_name => 'Rebelsky'})
-foo = Resident.new({:first_name => 'F', :last_name => 'Up'})
-foo.save
-User.create!({:email => 'rebelsky@grinnell.edu', :password => 'they-fouled-up'})
+#Profile.create!(:first_name=>"Yetter", :last_name=>"Bob")

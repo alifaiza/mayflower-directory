@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ResidentTest < ActiveSupport::TestCase
+class ProfileTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
