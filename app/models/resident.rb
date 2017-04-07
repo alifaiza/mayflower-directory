@@ -1,4 +1,4 @@
-class Residents < ApplicationRecord
+class Resident < ApplicationRecord
     self.table_name = "residents"
     attr_accessor :first_name, :last_name
     

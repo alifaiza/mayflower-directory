@@ -29,7 +29,7 @@ require 'csv'
 #  Residents.create!(row.to_hash)
 #end
 
-Residents.create!({:first_name => 'Sam', :last_name => 'Rebelsky'})
-foo = Residents.new({:first_name => 'F', :last_name => 'Up'})
+Resident.create!({:first_name => 'Sam', :last_name => 'Rebelsky'})
+foo = Resident.new({:first_name => 'F', :last_name => 'Up'})
 foo.save
 User.create!({:email => 'rebelsky@grinnell.edu', :password => 'they-fouled-up'})
