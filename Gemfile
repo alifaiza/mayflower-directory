@@ -5,8 +5,7 @@ gem 'ransack'
 # Use ransack for basic and advanced search function
 gem 'rails', '5.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-# Use SCSS for stylesheets
+gem 'pg'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -93,6 +92,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   
-  gem 'sqlite3'
+  gem 'pg'
+  #email: mayflowerdatabase@gmail.com
+  #password: GrinnellTigers322
 end
 
