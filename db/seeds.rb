@@ -12,14 +12,15 @@ user = User.create! :email => 'admin@admin.com', :password => 'password', :passw
 
 
 require 'csv'
- 
- csv_data = File.read('MayflowerDirectory1.csv')
- csv = CSV.parse(csv_data, :headers => true)
- csv.each do |row|
-     row = row.to_hash.with_indifferent_access
-     bob = row.to_hash.symbolize_keys
-     Profile.create!(bob)
- end
+
+# This is commmented out because our directory has been scrubbed
+# csv_data = File.read('MayflowerDirectory1.csv')
+# csv = CSV.parse(csv_data, :headers => true)
+# csv.each do |row|
+#     row = row.to_hash.with_indifferent_access
+#     bob = row.to_hash.symbolize_keys
+#     Profile.create!(bob)
+# end
 
 csv_data = File.read('MayflowerEmailPw.csv')
  csv = CSV.parse(csv_data, :headers => true)
