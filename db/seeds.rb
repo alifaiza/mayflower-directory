@@ -27,7 +27,10 @@ csv_data = File.read('MayflowerEmailPw.csv')
  csv.each do |row|
      row = row.to_hash.with_indifferent_access
      bob = row.to_hash.symbolize_keys
-     User.create!(bob)
+     print bob
+     if User.where(email: bob[:email], password: bob[:password]).length == 0 # record not in hash
+       User.create!(bob)
+     end
  end
 
 #Profile.create!(:first_name=>"Yetter", :last_name=>"Bob")
