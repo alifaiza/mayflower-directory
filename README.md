@@ -2,7 +2,7 @@ Hi Future Mayflower Database work group!
 
 We've left you with a mostly functional pictoral databse of the mayflower. 
 There are some things we were unable to finish during our semester and 
-some things that we learned a long the way. 
+some things that we learned along the way. 
 
 **What we accomplished**
 If you have any questions about what we did last semester, you can look at our 
@@ -17,7 +17,7 @@ look at it email [baejongh].
     5. Going off that, we set up the backend database
     
     
-**What we leaned**
+**What we learned**
 JHB & KY: 
     1. Read documentation all the way through before implementing gems
     (Don't use a gem you don't understand)
