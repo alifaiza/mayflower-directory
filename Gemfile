@@ -91,6 +91,7 @@ end
 #  # CodeClimate reports test coverage and scores the DRYness and readibility of
 #  #  the project.
 #  gem 'codeclimate-test-reporter'
+gem 'fog-aws'
 
 
 group :development do
