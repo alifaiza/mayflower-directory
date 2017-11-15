@@ -95,6 +95,7 @@ end
 #  #  the project.
 #  gem 'codeclimate-test-reporter'
 gem 'fog-aws'
+gem 'aws-sdk'
 
 
 group :development do

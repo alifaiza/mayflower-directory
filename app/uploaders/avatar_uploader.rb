@@ -1,3 +1,5 @@
+require 'carrierwave'
+
 class AvatarUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
@@ -5,6 +7,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
+  #storage :file
   storage :fog
 
   # Override the directory where uploaded files will be stored.
@@ -12,12 +15,12 @@ class AvatarUploader < CarrierWave::Uploader::Base
   
 
   def store_dir
-    '/mayflower-data/images'
+    "mayflower-data/images"
   end
   
-  def cache_dir
-    '/mayflower-data/images'
-  end
+ # def cache_dir
+    "mayflowe-data/images"
+ # end
   
   #stuff in comments can be commented out if we need them later
 

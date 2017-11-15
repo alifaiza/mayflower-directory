@@ -3,7 +3,7 @@
 </div>
 
 <!-- Testing line -->
-<%= image_tag "https://s3.us-east-2.amazonaws.com/mayflower-data/images/Agnew%2C+Dan.png", size: 200 %>
+<%= image_tag @profile.remote_avatar_url.to_s, size: 200 %>
 
 <!-- %= image_tag @profile.last_name.to_s + ", " + @profile.first_name.to_s+".png", size: 200 %> -->
 

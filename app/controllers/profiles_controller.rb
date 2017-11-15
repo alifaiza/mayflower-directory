@@ -10,7 +10,7 @@ class ProfilesController < ApplicationController
   end
   
   def profile_params
-    params.require(:profile).permit(:first_name, :last_name, :nickname, :landline, :cell, :email, :address, :neighborhood, :spouse)
+    params.require(:profile).permit(:first_name, :last_name, :nickname, :landline, :cell, :email, :address, :neighborhood, :spouse, :avatar)
   end
    
   def update
@@ -26,12 +26,13 @@ class ProfilesController < ApplicationController
   def create
     puts "*** CREATING A NEW USER ****"
     puts profile_params
-    @user = Profile.new(profile_params)
+    @profile = Profile.new(profile_params)
+    @user = @profile
     #puts "User is "
     #puts @user.to_s
-    if @user.save
+    if @profile.save
       flash[:notice] = "profile sucessfully added"
-      redirect_to '/profiles/' + @user[:id].to_s
+      redirect_to '/profiles/' + @profile[:id].to_s
     else 
       flash[:notice] = "there was a problem creating the new profile"
       render action 'profile/new'
