@@ -18,9 +18,9 @@ class AvatarUploader < CarrierWave::Uploader::Base
     "mayflower-data/images"
   end
   
- # def cache_dir
+  def cache_dir
     "mayflowe-data/images"
- # end
+  end
   
   #stuff in comments can be commented out if we need them later
 
