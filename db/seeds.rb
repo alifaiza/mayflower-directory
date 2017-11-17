@@ -30,3 +30,4 @@ csv_data = File.read('MayflowerEmailPw.csv')
  end
 
 #Profile.create!(:first_name=>"Yetter", :last_name=>"Bob")
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
