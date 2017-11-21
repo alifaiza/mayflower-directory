@@ -109,4 +109,7 @@ end
 #fog gem
 gem 'fog', '~> 1.38'
 
+#AWS Gem
+gem 'aws-sdk', '~> 3'
+
 ruby "2.3.4"
